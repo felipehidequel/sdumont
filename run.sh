@@ -8,7 +8,8 @@
 #SBATCH --job-name=seminario-pcd
 
 ## carrega modulos necessários
-module load openmpi/gnu/4.1.1_sequana
+# module load openmpi/gnu/4.1.1_sequana
+module load openmpi/gnu/4.1.4+gcc-12.4_sequana
 
 echo $SLURM_JOB_NODELIST
 nodeset -e $SLURM_JOB_NODELIST
@@ -19,4 +20,6 @@ EXEC=/scratch/semipcd/sdumount/main
 
 /usr/bin/ldd $EXEC
 
-srun $EXEC
+N_LANCAMENTOS=$1
+
+srun $EXEC $N_LANCAMENTOS
