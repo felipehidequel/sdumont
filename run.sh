@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH -p sequana_cpu 
+#SBATCH -p sequana_cpu_dev
 #SBATCH --nodes=4
 #SBATCH --cpus-per-task=24
 #SBATCH --time=00:10:00
