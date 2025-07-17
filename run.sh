@@ -16,7 +16,8 @@ nodeset -e $SLURM_JOB_NODELIST
 
 cd $SLURM_SUBMIT_DIR
 
-EXEC=/scratch/semipcd/sdumount/main
+# tem que ser o caminho que do executavel na pasta de vocês
+EXEC=/scratch/pex1272-ufersa/felipe.silva4/sdumont/main
 
 /usr/bin/ldd $EXEC
 
