@@ -13,5 +13,5 @@ cd /scratch/pex1272-ufersa/bruno.silva7/sdumont
 module load gcc/14.2.0_sequana
 module load openmpi/gnu/4.1.1_sequana
 
-mpicxx -fopenmp monte_carlo.cpp -o main.exe
-mpirun -np 4 ./main.exe 1000000000
+mpicxx -fopenmp anel.c -o main.exe
+mpirun -np 4 ./main.exe
