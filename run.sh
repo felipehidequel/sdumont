@@ -8,8 +8,7 @@
 #SBATCH --job-name=seminario-pcd
 
 ## carrega modulos necessários
-# module load openmpi/gnu/4.1.1_sequana
-module load openmpi/gnu/4.1.4+gcc-12.4_sequana
+module load openmpi/gnu/4.1.1_sequana
 
 echo $SLURM_JOB_NODELIST
 nodeset -e $SLURM_JOB_NODELIST
